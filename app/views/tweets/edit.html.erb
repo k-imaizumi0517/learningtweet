@@ -1,0 +1,21 @@
+<div class="article">
+  <div class="row">
+    <%= form_for @tweet, :url => {:action => 'update'}, html: {class: 'col s12'} do |f| %>
+      <div class="row">
+        <div class="input-field col s12">
+          <%= f.text_field :title, :class=>"materialize-textarea" %>
+          <%= f.label :title %>
+        </div>
+        <div class="input-field col s12">
+          <%= f.text_area :text, :class=>"materialize-textarea" %>
+          <%= f.label :text %>
+        </div>
+        <div>
+          <%= f.submit %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+
